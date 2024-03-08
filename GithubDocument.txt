@@ -1,0 +1,124 @@
+**POINT TO KEEP IN MINDS**
+
+Note- create a branch into git using this command 
+git init -b main
+
+Note- How to add a file into git repository use this command 
+git add filename
+
+Note- To find the git history we use this command 
+git log
+git status
+
+Note- To commit a file we use this command 
+git init -m "my first commit"
+Here -m treated as message what you want to commit alright
+
+Note-To know the git configuration we use this command 
+git config --version
+git config -- global --version
+
+Note-To set the user and password into git are as follows.
+git config -- global user.name"win"
+git config -- global password"duragibm@123"
+
+Note-To create a directory we use this command by defaults its creates a master branch into git repository
+git init 
+
+what is git repository ?
+Repository contains a collection of files of various different version of project.
+Repository can be divided into two types based on the usage on a server
+1.Base repository
+2.Non-base repository
+
+Note-Git skipping staging area commands
+git commit -a -m "Git Documentation"
+
+Note-The gig diff commands hepls you see compare and understand changes in your project.
+Git staging step by step process commands
+git diff --staged
+git commit -m "first commit"
+
+Note - Git remove file commands
+git rm --cached.filename
+
+what is tagging in git ?
+Tagging is basically just defining the version it could be project launch file these these have version number so this is called tagging
+There are two type of tagging
+1.Lightweight tagging
+2.Annotated tagging
+commands of tagging 
+
+Note- To check the tagging have you done or not again use same command
+git tag 
+git tag -a v1.0 -m "1st release"
+
+Note- This will provide the detail,description about the particular or tag.
+git show v1.0
+now this is updated in local repository push into remote repository use this commands
+git push origin main 
+
+Note- you should have to push tag into repository
+git push origin v1.0
+git push origin v1.1
+
+Note -Git Clone project
+till this point we are able to work with own repository on github and local as well if you want to work other repository may be
+you want to clone a repository what is happening  there or you want make change in it 
+go to github account code section you will find HTTPS copy the https url, now enter the command are as follows
+
+Note - git clone https://github.com.microsoftvscode.git 
+To know the commit history use this command 
+git log 
+To know the tag 
+git tag 
+
+Note - if you want to know commit some information instead git log you can also use this command given below 
+git log --pretty = oneline
+
+Note - To create a branch we usually use this command
+There are basically two types to create an branch command are as follows
+git checkout(this is older one)
+git switch(newest version)
+
+Note - In branch if you firslty creating the branch uses this command line
+git checkout -b mastery
+
+Note - To verify how many branch do you have in  your system using this commands 
+git branch 
+
+Note- Now the quesiton arises in your mind which branch we are working or which branch is active to verify * symbols  front of branch 
+
+Note- To switch the branch we use this command
+git switch branch_name
+shortcut to switch the branch or to create branch
+git switch -b feature1
+git switch -c feature1
+
+Note - To know the branch in your machine using this commands
+git brnach --all//remote repository
+
+Note - if you want to go previous branch use this command
+git switch -
+
+Note -  To delete a branchwe use this commands
+git branch -d feature1
+To verify branch is deleted or not yet
+git branch
+
+Note - Git branch pushing to remote repository
+git remote add origin https://github.com/Beunstopable/sign-language -detection.git
+git push -u origin main
+
+Note - Git Merge two branches here git merge feature1
+suppose in your pc you created a two branch first one is main and second one is feature suppose if you wanted merge  branch you have current repository into machine and
+use the another branch in it.
+
+Note - To switch the branch use this commands
+git switch main 
+
+Note - pull the repository from git repository using the this command
+git pull origin main 
+
+Note - push the repository from git repository using the this command
+git push origin main 
